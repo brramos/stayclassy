@@ -7,13 +7,13 @@ const app = express()
 const PORT = 80
 
 app.get('/', (req, res) => {
-	res.sendFile(path.join(__dirname, '../src/index.html'))
+	res.sendFile(path.join(__dirname, './src/index.html'))
 })
 
 app.listen(PORT, (err) => {
 	if (err) {
 		console.log(err)
 	} else {
-		open('http://localhost:' + port)
+		open('http://localhost:' + PORT)
 	}
 })
