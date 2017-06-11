@@ -1,14 +1,19 @@
 {
-    "name": "stayclassy",
-    "description": "Always Stay Classy",
-    "version": "0.0.1",
-    "private": true,
-    "license": "MIT",
-    "author": "Billy Ramos",
-    "engines": {
-        "node": ">=6.9.1"
-    },
-    "scripts": {
-        "start": "node index.js"
-    }
+  "name": "stayclassy",
+  "description": "Always Stay Classy",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Billy Ramos",
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "open": "0.0.5",
+    "path": "^0.12.7"
+  }
 }

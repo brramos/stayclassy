@@ -1,13 +1,17 @@
-var http = require('http');
+const express = require('express')
+const path = require('path')
+const open = require('open')
 
-var server = http.createServer(function(request, response) {
+const app = express()
 
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!");
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, '../src/index.html'))
+})
 
-});
-
-var port = process.env.PORT || 1337;
-server.listen(port);
-
-console.log("Server running at http://localhost:%d", port);
+app.listen(8000, (err) => {
+	if (err) {
+		console.log(err)
+	} else {
+		open('http://localhost:' + port)
+	}
+})
