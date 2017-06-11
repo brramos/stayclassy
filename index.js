@@ -14,6 +14,6 @@ app.listen(PORT, (err) => {
 	if (err) {
 		console.log(err)
 	} else {
-		open('http://localhost:' + PORT)
+		open('http://127.0.0.1:' + PORT)
 	}
 })
